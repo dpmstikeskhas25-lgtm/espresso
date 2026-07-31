@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ormawa STIKes Khas-Kotak Aspirasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="logo-animation">
+                <img src="img/download logo stikes.png" alt="Logo STIKes KHAS">
+                <div class="pulse-ring"></div>
+            </div>
+            <div class="loader-text">
+                <span class="letter">O</span>
+                <span class="letter">R</span>
+                <span class="letter">M</span>
+                <span class="letter">A</span>
+                <span class="letter">W</span>
+                <span class="letter">A</span>
+                <span class="letter"></span>
+                <span class="letter">S</span>
+                <span class="letter">T</span>
+                <span class="letter">I</span>
+                <span class="letter">K</span>
+                <span class="letter">e</span>
+                <span class="letter">s</span>
+                <span class="letter"></span>
+                <span class="letter">K</span>
+                <span class="letter">H</span>
+                <span class="letter">A</span>
+                <span class="letter">S</span>
+
+            </div>
+         </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/download logo stikes.png" alt="Logo HIMESY KHAS" class="me-3">
+                <span class="fw-bold fs-4">ORMAWA STIKes KHAS</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#himesyNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="himesyNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tentang Kami<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tentangkami.html">Tentang Kami</a></li>
+                            <li><a class="dropdown-item" href="tugas-fungsi.html">Tugas & fungsi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Struktur<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><span class="dropdown-header text-warning fw-bold small">PIMPINAN</span></li>
+                            <li><a class="dropdown-item" href="https://www.stikeskhas.ac.id/">STIKes KHAS KEMPEK</a></li>
+                            <li><hr class="dropdown-divider bg-white opacity-25"></li>
+                            <li><span class="dropdown-header text-warning fw-bold small">DAFTAR ORMAWA</span></li>
+                            <li><a class="dropdown-item" href="structure.html">DPM (Dewan Perwakilan Mahasiswa)</a></li>
+                            <li><a class="dropdown-item" href="Stuktur bem.html">BEM (Badan Eksekutif Mahasiswa)</a></li>
+                            <li><a class="dropdown-item" href="struktur himafarma.html">HIMAFARMA (Himpunan Mahasiswa Farmasi)</a></li>
+                            <li><a class="dropdown-item" href="struktur himagi.html">HIMAGI (Himpunan Mahasiswa Gizi)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="berita.html">BERITA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kotak Aspirasi.html">KOTAK ASPIRASI</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="aspiration-page">
+        <div class="container">
+            <div class="aspiration-card">
+                <div class="aspiration-header">
+                    <h2>Suara Mahasiswa</h2>
+                    <p>Suara adalah perubahan bagi kampus kita. Sampaikan aspirasi, kritik, atau saran Anda secara terbuka dan bertanggung jawab demi kemajuan STIKes KHAS Kempek.</p>
+                </div>
+                            <form id="my-form" action="https://formspree.io/f/mrezjllg" method="POST" class="aspiration-form">
+                    <div class="form-group">
+                        <label for="nama"><i class="fas fa-user"></i> Nama </label>
+                        <input type="text" id="nama" name="Nama" placeholder="Masukkan nama Anda...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email Aktif</label>
+                        <input type="email" id="email" name="Email" placeholder="nama@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wassap"><i class="fa-brands fa-whatsapp"></i> No Telepon</label>
+                        <input type="tel" id="wassap" name="Telepon" placeholder="No Telepon" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan"><i class="fas fa-comment-dots"></i> Aspirasi Anda</label>
+                        <textarea id="pesan" name="Aspirasi" placeholder="Tuliskan aspirasi secara jelas..." required></textarea>
+                    </div>
+
+                    <button id="my-form-button" type="submit" class="btn btn-primary btn-full">Kirim Aspirasi</button>
+                    <p id="my-form-status" style="text-align: center; margin-top: 15px; font-weight: 600;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var button = document.getElementById("my-form-button");
+          var data = new FormData(event.target);
+          
+          button.disabled = true;
+          button.innerText = "Sedang Mengirim...";
+
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Terima kasih! Aspirasi Anda berhasil dikirim.";
+              status.style.color = "#28a745";
+              form.reset();
+              button.disabled = false;
+              button.innerText = "Kirim Aspirasi";
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                } else {
+                  status.innerHTML = "Oops! Terjadi kendala saat mengirim.";
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! Ada masalah koneksi.";
+            status.style.color = "red";
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+  
+      <footer>
+        <div class="container footer-container">
+            
+            <div class="footer-col">
+                <h4>ORMAWA STIKes Khas Kempek </h4>
+                <p>Membangun Organisasi Yang Tertib Adninistrasi Dan Berinegritas</p>
+                <div class="social-links" style="margin-top: 15px;">
+                    <a href="https://www.instagram.com/dpmstikeskhas/#" style="display: inline-block; margin-right: 10px; color: white;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@dpmstikeskhas" style="display: inline-block; margin-right: 10px; color: white;"><i class="fa-brands fa-tiktok"></i></a>
+
+                </div>
+            </div>
+
+        
+
+            <div class="footer-col">
+                <h4>Navigasi Cepat</h4>
+                <a href="index.html">Beranda</a>
+                <a href="tentangkami.html">Tentang Kami</a>
+                <a href="berita.html">Berita</a>
+                <a href="kotak Aspirasi.html">Kotak Aspirasi</a>
+            </div>
+
+            <div class="footer-col" id="contact">
+                <h4>Hubungi Kami</h4>
+                <p><i class="fas fa-envelope"></i> ormawastikeskhas25.com</p>
+                <p><i class="fas fa-phone"></i> +62 838 1893 5831</p>
+                <a href="https://www.google.com/maps/place/STIKes+KHAS+Kempek+Cirebon/@-6.6955847,108.4113421,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6edf4209f7dec7:0xd614490e5ce95262!8m2!3d-6.69559!4d108.413917!16s%2Fg%2F11sj7r61xp?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D"><p><i class="fas fa-map-marker-alt"></i> STIKes Khas Kempek, Cirebon</p></a>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            &copy;2025 - ORMAWA STIKes Khas Kempek. All Rights Reserved.
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add 'scrolled' class to navbar after page scroll (matching 1.html behaviour)
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth-scroll for on-page anchors, but allow Bootstrap dropdown toggles and plain '#' to behave normally
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // skip if it's a plain '#' (used by dropdown) or element is a dropdown-toggle
+                if (!href || href === '#' || this.classList.contains('dropdown-toggle') || this.dataset.bsToggle === 'dropdown') {
+                    return; // let bootstrap handle dropdowns and plain hashes
+                }
+
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Set `.active` on navbar links based on current page URL (so underline follows current page)
+        function updateActiveNav() {
+            const navItems = document.querySelectorAll('.navbar-nav .nav-item');
+            const current = window.location.pathname.replace(/\/+/g, '/').split('/').pop() || 'index.html';
+
+            // helper to extract filename from href
+            const filenameFromHref = (href) => {
+                if (!href) return null;
+                if (href.startsWith('#')) return '';
+                try {
+                    const url = new URL(href, window.location.origin + window.location.pathname);
+                    return url.pathname.replace(/\/+/g, '/').split('/').pop();
+                } catch (e) {
+                    return null;
+                }
+            };
+
+            navItems.forEach(item => {
+                const toggle = item.querySelector('.nav-link');
+                if (!toggle) return;
+
+                // if this nav-item contains a dropdown-menu, check its children
+                const dropdown = item.querySelector('.dropdown-menu');
+                if (dropdown) {
+                    const childLinks = dropdown.querySelectorAll('a');
+                    let matched = false;
+                    childLinks.forEach(cl => {
+                        const f = filenameFromHref(cl.getAttribute('href'));
+                        if (f && f === current) matched = true;
+                    });
+
+                    // Also check if the dropdown toggle itself links to a page (rarely), otherwise use matched
+                    const toggleHrefFile = filenameFromHref(toggle.getAttribute('href'));
+                    if (toggleHrefFile && toggleHrefFile === current) matched = true;
+
+                    if (matched) {
+                        toggle.classList.add('active');
+                        // optional: also open dropdown on current page
+                        // item.querySelector('.dropdown-menu')?.classList.add('show');
+                    } else {
+                        toggle.classList.remove('active');
+                    }
+                } else {
+                    // simple link
+                    const f = filenameFromHref(toggle.getAttribute('href'));
+                    // treat anchors as homepage
+                    if (toggle.getAttribute('href') && toggle.getAttribute('href').startsWith('#')) {
+                        const isHome = current === '' || /index\.html?$/.test(current);
+                        if (isHome) toggle.classList.add('active'); else toggle.classList.remove('active');
+                    } else if (f && f === current) {
+                        toggle.classList.add('active');
+                    } else {
+                        toggle.classList.remove('active');
+                    }
+                }
+            });
+        }
+
+        // Run on load
+        document.addEventListener('DOMContentLoaded', updateActiveNav);
+        // Also run on history navigation
+        window.addEventListener('popstate', updateActiveNav);
+
+         window.addEventListener('load', function() {
+        const preloader = document.getElementById('preloader');
+        
+        // Memberikan jeda 2 detik agar animasi terlihat sebentar
+        setTimeout(function() {
+            preloader.classList.add('loader-fade-out');
+        }, 2000); 
+    });
+    </script>
+</body>
+</html>
